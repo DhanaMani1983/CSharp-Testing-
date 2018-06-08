@@ -1,0 +1,33 @@
+##################################################
+MVC Unit Testing
+#################################################
+
+Source: https://www.tutorialspoint.com/asp.net_mvc/asp.net_mvc_unit_testing.htm
+
+Unit testing means software testing where each unit of source code is tested to be fit for purpose
+
+In other words even smallest testable parts of an application are tested for its use.
+
+In object oriented programming, unit normally refers to a class or method.
+
+Purpose of unit testing is whether testable unit of code behaves as expected
+
+Unit testing:
+
+1. Create ASP.NET web application, select mvc template and select add unit test, two projects will be created, one mvc project and other test project
+
+2. In MVC project you will see three action methods for Index, About and Contact 
+
+3. In test project you can see three method corresponding to MVC controllers
+
+4. To test the action methods go to menu bar test => run => All tests
+
+5. you will see the Test Explorer on the left side in which you can see that all the tests are passed.
+
+6. Add employee model wuth ID, Name, JoiningDate, Age
+
+7. Add empty employee container .
+
+8. Add view for employee action method 
+
+9. Add test class and test method to test the controller 
