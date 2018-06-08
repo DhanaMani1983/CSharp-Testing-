@@ -31,3 +31,27 @@ Unit testing:
 8. Add view for employee action method 
 
 9. Add test class and test method to test the controller 
+
+Unit Testing Frameworks:
+
+Source :https://www.youtube.com/watch?v=rW6LvPP4VvA
+
+MSTest
+NUnit
+MbUnit
+XUnit.net
+
+MSTest is integrated with vs:
+
+Once you have learned how to create unit test with one framework, its the same procedure with other framework, there can be certain implementation differences
+
+Creating unit test
+
+1. Adding unit test project 
+2. Decorating the class containing the test methods as test class
+3. Decorate the test method with test method attribute 
+
+AAA (Arrange, Act, Assert) pattern is a common way to write unit test
+Arrange - intitalizes the object and sets the data which needs to be passed to the test method
+Act - Invokes the test method which needs to be tested
+Assert - verifies method which is being tested is behaving as expected 
