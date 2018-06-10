@@ -1,0 +1,30 @@
+#################################################
+UNIT TESTING
+################################################
+
+Source: https://www.youtube.com/watch?v=hnPPItvvNB0&list=PLWqfISiz-OB2uAbhghhIN2R3vPz--XH36&index=2
+
+Unit Test framework:
+
+MSTest, NUnit, xUnit etc
+
+If you are using Visual Studio, TFS then MSTest works very well
+
+If you are using other continuous integration tools like team city its better to use NUnit 
+
+1. Create a unit test project and right click reference and add unit test library from nuget
+
+2. Create a unit test class, best practice is to create test class for each class and namespace is class name followed by unit test 
+
+3.Decorate the class with attribute TestFixture to informa its a test class
+
+4.Decorate the test method with Test attribute and namespace of method is methodname_returns_ReturnType ex: Index_Return_ActionResult
+Return type of test method is void becuase everything is returned internally.
+If it accesses the database its called integration test
+Unit test should normally run without db it should be in memory
+
+In standard MVC projects, the controller talks to context and context talks to entity framework, context and EF are tightly coupled, 
+so we can't get rid of database for test purpose
+
+we need to change the MVC pattern to incorporate Repository, so controller will talk to repository, repository will talk to context and context to EF
+
